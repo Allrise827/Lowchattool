@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/account_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="账号:"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:paddingLeft="13dp"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/account_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.19"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/code_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="密码:"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:paddingLeft="13dp"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/code_input"
+            android:layout_weight="3.20" />
+
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/login"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:text="登  录"
+        android:layout_gravity="center"
+        android:onClick="onClick"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
